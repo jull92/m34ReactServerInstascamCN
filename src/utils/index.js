@@ -29,15 +29,16 @@ export const login = async (username, pass, setter) => {
         });
         const data = await response.json();
         setter(data.token);
+        localStorage.setItem("myToken", data.token);
     } catch (error) {
         console.log(error);
     }
 };
 
-export const logout = () => {
-    localStorage.clear();
-    window.location.reload(false);
-};
+// export const logOut = () => {
+//     localStorage.clear();
+//     window.location.reload(false);
+// };
 
 export const tokenLogin = async (setter) => {
     try {
@@ -69,6 +70,9 @@ export const updateUser = async (username, pass, setter) => {
         console.log(error);
     }
 };
+
+
+
 
 export const deleteUser = async (user) => {
     try {

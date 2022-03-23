@@ -1,6 +1,6 @@
 * {
   background-color: #40414F;
-  color: white;
+  color: wheat;
 }
 
 .App {
@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.Login {
+.formContainer {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -21,11 +21,47 @@
   width: 100%;
 }
 
-.input {
-  width: 33%;
-  
+.photo {
+  max-width: 400px;
+  max-height: 400px;
+}
+p {
+  font-size: 20px;;
 }
 
-.logSign {
-  
+button {
+  background-color: wheat;
+  color: #40414F;
+  font-weight: bold;
+  max-width: 10vw;
+
+}
+
+.Navbar {
+  font-size: 50%;
+}
+
+.photoContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 20vw;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 0;
+}
+
+/* .photoAuthor {
+  max-width: 20vw;
+} */
+
+.pageContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+};
+
+.settingsPage {
+  display: flex;
+  justify-content: center;
 }
